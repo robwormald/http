@@ -14,13 +14,14 @@
   "dependencies": {
     "traceur": "0.0.45",
     "di": "~2.0.0-pre-2",
-    "prophecy":"^0.0.4"
+    "prophecy": "^0.0.4"
   },
   "devDependencies": {
-    "pipe": "angular/pipe",
     "assert": "angular/assert#dist",
     "gulp-connect": "~0.3.0",
+    "pipe": "angular/pipe",
     "require": "~0.5.0",
+    "typescript": "^1.7.5",
     "zone.js": "git://github.com/angular/zone.js#v0.2.4"
   },
   "scripts": {
