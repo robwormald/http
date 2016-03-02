@@ -4,15 +4,15 @@
 		"module": "commonjs",
         "target": "es5",
         "noImplicitAny": true,
-        "outDir": "dist",
+        "outDir": "../temp",
         "sourceMap": false,
 		"declaration": true,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true
     },
     "files": [
-		"typings/browser.d.ts",
-		"src/http.ts",
-		"test/http_spec.ts"
+		"../typings/browser.d.ts",
+		"../src/http.ts",
+		"http_spec.ts"
 	]
 }

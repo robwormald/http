@@ -11,21 +11,27 @@
   "bugs": {
     "url": "https://github.com/angular/ngHttp/issues"
   },
-  "dependencies": {
-    "traceur": "0.0.45",
-    "di": "~2.0.0-pre-2",
-    "prophecy": "^0.0.4"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "assert": "angular/assert#dist",
-    "gulp-connect": "~0.3.0",
-    "pipe": "angular/pipe",
-    "require": "~0.5.0",
+    "angular2": "^2.0.0-beta.8",
+    "es6-promise": "^3.1.2",
+    "es6-shim": "^0.33.13",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.21",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.7",
+    "karma-systemjs": "^0.12.0",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.2",
+    "systemjs": "^0.19.23",
     "typescript": "^1.7.5",
-    "zone.js": "git://github.com/angular/zone.js#v0.2.4"
+    "zone.js": "^0.5.15"
   },
   "scripts": {
-    "test": "karma start --single-run"
+    "test": "npm run build_test && karma start --single-run",
+    "build_test": "npm run clean_test && tsc -p test",
+	"clean_test": "rm -rf temp"
   },
   "author": "Jeff Cross <middlefloor@gmail.com>",
   "license": "Apache-2.0"
