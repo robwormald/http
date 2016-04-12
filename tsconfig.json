@@ -12,7 +12,6 @@
     },
     "files": [
 		"typings/browser.d.ts",
-		"src/http.ts",
-		"test/http_spec.ts"
+		"src/http.ts"
 	]
 }

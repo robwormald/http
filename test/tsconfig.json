@@ -1,18 +1,18 @@
 {
-    "compilerOptions": {
-        "moduleResolution": "node",
-		"module": "commonjs",
-        "target": "es5",
-        "noImplicitAny": true,
-        "outDir": "../temp",
-        "sourceMap": false,
-		"declaration": true,
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true
-    },
-    "files": [
-		"../typings/browser.d.ts",
-		"../src/http.ts",
-		"http_spec.ts"
-	]
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es5",
+    "outDir": "../temp",
+    "sourceMap": false,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "files": [
+    "../typings/browser.d.ts",
+    "http_spec.ts",
+    "http_integration_spec.ts",
+    "backends/xhr_backend_spec.ts"
+  ]
 }
